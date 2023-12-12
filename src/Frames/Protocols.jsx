@@ -2,8 +2,8 @@ import React from "react";
 
 const Protocols = () => {
   return (
-    <div className="flex">
-      <div className="flex flex-col gap-24 m-5">
+    <div className="flex h-full w-full">
+      <div className="flex flex-col gap-24 m-5 justify-center items-center">
         <h1 className="font-bold">
           The Network You Are Managing is working with NAME Protocol
         </h1>
@@ -19,7 +19,7 @@ const Protocols = () => {
           </button>
         </div>
       </div>
-      <div className="bg-white w-1/2 border-4 border-black m-2"></div>
+      <div className="bg-white w-1/2 border-4 border-black m-5"></div>
     </div>
   );
 };

@@ -4,12 +4,15 @@ import { useNavigate } from "react-router-dom";
 const TopBar = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col bg-slate-900 p-5 justify-center">
+    <div className="flex flex-col h-[15%] w-full bg-transparent p-5 justify-center">
       <div className="flex justify-between">
-        <div className="pl-3 ">
-          <div className="flex bg-white rounded-2xl">
+        <div className="font-bold flex justify-center p-5 animate-pulse ">
+          DashBoard
+        </div>
+        <div className="flex flex-col justify-center">
+          <div className="flex shadow-black shadow-lg bg-white p-1 items-center justify-center rounded-3xl">
             <input
-              placeholder="search"
+              placeholder="Search . . . "
               className=" rounded-2xl outline-none p-1 w-96 h-9"
             />
             <div>-O</div>
@@ -17,14 +20,14 @@ const TopBar = () => {
         </div>
         <div className="flex gap-16 text-gray-600">
           <button
-            className="border-2 border-slate-900
+            className="border-2 border-transparent
              hover:border-white hover:border-2 hover:border-r-transparent hover:border-l-transparent
              hover:text-warmGray-100 "
           >
             Home
           </button>
           <button
-            className="border-2 border-slate-900
+            className="border-2 border-transparent
              hover:border-white hover:border-2 hover:border-r-transparent hover:border-l-transparent
              hover:text-warmGray-100 "
             onClick={() => navigate("/setting")}
@@ -32,16 +35,13 @@ const TopBar = () => {
             Settings
           </button>
           <button
-            className="border-2 border-slate-900
+            className="border-2 border-transparent
              hover:border-white hover:border-2 hover:border-r-transparent hover:border-l-transparent
              hover:text-warmGray-100 "
             onClick={() => navigate("/help")}
           >
             Help
           </button>
-        </div>
-        <div>
-          <button>O</button>
         </div>
       </div>
     </div>

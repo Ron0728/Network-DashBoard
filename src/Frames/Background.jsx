@@ -6,15 +6,13 @@ const Background = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div className=" ">
+    <div className="">
       <video
-        width="100%"
-        height="130%"
         loop
         muted
         autoPlay="autoplay"
         class="Background-clip"
-        className="absolute h-screen "
+        className="absolute w-screen h-screen"
       >
         <source src="MainBackGround.mp4" type="video/mp4"></source>
       </video>

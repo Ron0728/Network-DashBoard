@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "C:/Users/Rani/Desktop/frontend/src/Css/Button.css";
+import "C:/Users/Rani/Desktop/Network-DashBoard/src/Css/Button.css";
 
 const SingUp = () => {
   const navigate = useNavigate();

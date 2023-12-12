@@ -5,11 +5,12 @@ const SettingBox = () => {
   const navigate = useNavigate();
   return (
     <div
-      className="flex flex-col justify-center items-center p-16
-     rounded-2xl bg-slate-700 hover:text-white cursor-pointer border-2 "
+      className="flex flex-col justify-center items-center w-1/2 h-1/4 
+     rounded-3xl animate-bounce hover:text-white cursor-pointer
+     backdrop-blur-[20px] shadow-white shadow-sm"
       onClick={() => navigate("settinginfo")}
     >
-      info
+      icon
     </div>
   );
 };

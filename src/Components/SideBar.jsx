@@ -4,21 +4,18 @@ import {
   DASHBOARS_SIDEBAR_BOTTOM_LNKS,
 } from "./SideBarNavigation";
 import { useNavigate, useLocation } from "react-router-dom";
-import "C:/Users/Rani/Desktop/frontend/src/Css/LogOutButton.css";
+import "C:/Users/Rani/Desktop/Network-DashBoard/src/Css/LogOutButton.css";
 
 const SideBar = () => {
   const navigate = useNavigate();
   return (
-    <div className=" bg-slate-800 h-screen w-56">
-      <div className="font-bold flex justify-center p-5 animate-pulse ">
-        DashBoard
-      </div>
+    <div className="flex flex-col bg-transparent rounded-s h-full  justify-around w-1/6">
       <div className="h-[80%] flex flex-col gap-5 justify-center">
         {DASHBOARS_SIDEBAR_LNKS.map((items) => (
           <div
-            className="flex justify-center border-2 border-slate-800
-             hover:border-gray-600 hover:border-2 hover:border-r-transparent hover:border-l-transparent
-             hover:text-warmGray-100 p-3 cursor-pointer"
+            className="flex justify-center text-gray-500 font-semibold border-2 border-transparent
+              hover:border-2 hover:border-r-transparent hover:border-l-transparent
+             hover:text-white p-3 cursor-pointer"
             onClick={() => navigate(items.Path)}
             key={items.key}
           >
@@ -29,7 +26,7 @@ const SideBar = () => {
       <div>
         {DASHBOARS_SIDEBAR_BOTTOM_LNKS.map((items) => (
           <div
-            className="flex justify-center font-bold border-2 border-slate-800 cursor-pointer"
+            className="flex justify-center font-bold border-2 border-transparent cursor-pointer"
             key={items.key}
             onClick={() => navigate(items.Path)}
           >
