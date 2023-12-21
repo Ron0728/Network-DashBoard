@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 
 const DashBoard = () => {
   return (
-    <div className="flex-col w-screen h-screen  bg-[url('2.jpg')] bg-cover ">
+    <div className="flex-col w-screen p-3 bg-[url('2.jpg')] h-screen ">
       <TopBar />
-      <div className="flex w-full h-[85%]">
+      <div className="flex w-full h-[85%] pt-3 p-1">
         <SideBar />
-        <div className="bg-black w-0.5 mt-5 mb-5 rounded-e"></div>
+        {/* <div className="bg-black w-0.5 mt-5 mb-5 rounded-e"></div> */}
         <Outlet />
       </div>
     </div>
