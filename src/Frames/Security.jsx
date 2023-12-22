@@ -1,5 +1,6 @@
 import React from "react";
 import "C:/Users/Rani/Desktop/Network-DashBoard/src/Css/ON-OFFButton.css";
+import Radarchart from "../Charts/Radarchart";
 const Security = () => {
   return (
     <div className="flex w-full h-full">
@@ -30,7 +31,9 @@ const Security = () => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-400 w-full rounded-3xl m-5 shadow-black shadow-inner"></div>
+      <div className="bg-slate-800 w-full rounded-3xl m-5 shadow-black shadow-inner">
+        <Radarchart />
+      </div>
     </div>
   );
 };

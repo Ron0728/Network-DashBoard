@@ -4,8 +4,8 @@ import { Outlet, useNavigate } from "react-router-dom";
 const Settings = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-screen h-screen">
-      <div className="flex flex-col h-[15%] bg-[url('1.jpg')] bg-cover p-5 justify-center">
+    <div className="w-screen h-screen bg-[url('2.jpg')] bg-cover">
+      <div className="flex flex-col h-[15%] shadow-md shadow-black w-full backdrop-blur-[5px] p-10 justify-center">
         <div className="flex justify-between">
           <div className="font-bold flex justify-center p-5 animate-pulse ">
             DashBoard
@@ -46,7 +46,7 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-[url('2.jpg')] bg-cover flex-col justify-center h-[85%] ">
+      <div className="flex bg-transparent flex-col justify-center h-[85%] ">
         <Outlet />
       </div>
     </div>

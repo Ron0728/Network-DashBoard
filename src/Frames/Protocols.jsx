@@ -1,4 +1,5 @@
 import React from "react";
+import Linechart from "../Charts/Linechart";
 
 const Protocols = () => {
   return (
@@ -19,7 +20,9 @@ const Protocols = () => {
           </button>
         </div>
       </div>
-      <div className="bg-white w-1/2 border-4 border-black m-5"></div>
+      <div className="bg-[rgb(255,249,249)] w-1/2 border-4 border-black m-5">
+        <Linechart />
+      </div>
     </div>
   );
 };
