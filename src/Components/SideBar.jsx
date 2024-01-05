@@ -9,7 +9,7 @@ import "C:/Users/Rani/Desktop/Network-DashBoard/src/Css/LogOutButton.css";
 const SideBar = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col bg-[rgb(0,7,46)] rounded-ee-[15%]  rounded-se-[15%] h-full justify-around w-1/6">
+    <div className="flex flex-col bg-gradient-to-r from-[rgb(0,26,60)] to to-[rgb(46,82,122)] rounded-ee-[15%]  rounded-se-[15%] h-full justify-around w-1/6">
       <div className="h-[80%] flex flex-col gap-5 justify-center">
         {DASHBOARS_SIDEBAR_LNKS.map((items) => (
           <div
